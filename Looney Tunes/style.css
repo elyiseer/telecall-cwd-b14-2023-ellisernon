@@ -1,0 +1,168 @@
+body {
+    background-color: #cad2de;
+}
+
+nav {
+    background-color: #0f1115;
+}
+
+nav .flex-container .container .nav-menu ul li a {
+    font-family: 'Fredoka';
+    background: rgb(0, 0, 0, 0);
+    color: #cad2de;
+    border-radius: 50px;
+    box-shadow: none;
+    transition: 0.3s;
+}
+
+nav .flex-container .container .nav-menu ul li a:hover {
+    background: #cad2de;
+    color: #0f1115;
+}
+
+nav .flex-container .container .nav-menu ul{
+    display: flex;
+}
+
+.blob-content ul li .scrollspy-rounded-corner {
+    font-family: 'Fredoka';
+    font-size: large;
+    color: #6b7c8c;
+    padding: 0px 5px 20px 5px;
+}
+
+.blob-content ul li .scrollspy-rounded-corner.active {
+    border-left: solid 3px #6b7c8c;
+    padding: 0px 5px 20px 5px;
+    font-weight: 800;
+}
+
+blockquote {
+    border-left: solid 10px #CE333F;
+    margin: 0px 100px 0px 100px
+}
+
+.blob-motion {
+    position: absolute;
+    transform: translateY(-20%);
+    z-index: 0;
+}
+
+.blob-content {
+    z-index: 1;
+}
+
+.scrollspy-content {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fixed-height-card {
+    height: 300px;
+}
+
+.shows {
+    margin: 0px 10px 0px 80px;
+}
+
+footer {
+    background-color: #0f1115;
+    color: #cad2de;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    blockquote {
+        margin: 0px 100px 0px 100px
+    }
+
+    .fixed-height-card {
+        height: 400px;
+    }
+}
+
+@media (max-width: 992px) {
+    nav .flex-container .container .nav-menu {
+        height: 0px;
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #0f1115;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    nav .flex-container .container .nav-menu.active {
+        height: 250px;
+    }
+
+    nav .flex-container .container .nav-menu ul{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto 0 auto;
+        width: fit-content;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    nav .flex-container .container .nav-menu.active ul {
+        opacity: 1;
+    }
+
+    blockquote {
+        margin: 0px 70px 0px 70px
+    }
+
+    .fixed-height-card {
+        height: 460px;
+    }
+
+    .shows {
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav .brand-logo {
+        font-size: 25px;
+    }
+
+    blockquote {
+        border-left: solid 5px #CE333F;
+        margin: 0px 40px 0px 40px
+    }
+
+    .fixed-height-card {
+        height: 400px;
+    }
+
+    .shows {
+        margin: 0px 10px 0px 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    nav .brand-logo {
+        font-size: 20px;
+    }
+
+    blockquote {
+        margin: 0px 5px 0px 5px
+    }
+
+    .fixed-height-card {
+        height: 320px;
+    }
+}
+
+@media (max-width: 280px) {
+    .fixed-height-card {
+        height: 250px;
+    }
+}

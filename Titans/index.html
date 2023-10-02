@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Titan Superheroes</title>
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="https://www.pngall.com/wp-content/uploads/13/DC-Logo-PNG-Cutout.png">
+</head>
+
+<body id="body">
+  <!-- Nav Structure -->
+  <div class="navbar-fixed">
+    <nav>
+      <div class="flex-container blue-grey nav-wrapper">
+        <a href="#" data-target="slide-out" class="sidenav-trigger show-on-large"><i
+            class="medium material-icons">arrow_forward</i></a>
+        <div>
+          <img class="icon" src="https://www.pngall.com/wp-content/uploads/13/DC-Logo-PNG-Cutout.png" alt="dclogo">
+        </div>
+        <div class="header-text grey-text text-lighten-4 hide-on-med-and-down">
+          <h3 style="margin: 0 0 0 10px">Titans-DC Comics</h3>
+        </div>
+        <form class="searchBar">
+          <div class="input-field">
+            <input id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#video" class="black-text btn blue-grey lighten-3 waves-effect waves-green">Home</a></li>
+          <li><a href="#slider" class="black-text btn blue-grey lighten-3 waves-effect waves-green">Slider</a></li>
+          <li><a href="#table" class="black-text btn blue-grey lighten-3 waves-effect waves-green">Table</a></li>
+          <li><a href="#" class="black-text btn blue-grey lighten-3 waves-effect waves-green">Contact</a></li>
+        </ul>
+        <a href="#" data-target="drop-down" class="dropdown-trigger show-on-med-and-down hide-on-large-only"><i
+            class="medium material-icons right" style="margin-right: 10%;">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Dropdown Structure -->
+  <ul id='drop-down' class='dropdown-content right'>
+    <li><a href="colors-typography.html"><i class="material-icons">home</i>Home</a></li>
+    <li><a href="#slider"><i class="material-icons">image</i>Slider</a></li>
+    <li><a href="#table"><i class="material-icons">table_rows</i>Table</a></li>
+    <li><a href="#!"><i class="material-icons">mail</i>Contact</a></li>
+  </ul>
+
+  <!-- Sidenav Structure -->
+  <ul id="slide-out" class="sidenav blue-grey lighten-5">
+    <li>
+      <div class="user-view">
+        <div class="background">
+          <img src="https://c1.wallpaperflare.com/preview/572/452/899/plant-leaf-drop-of-water-black-and-white.jpg">
+        </div>
+        <a href="#user"><img class="circle materialboxed" src="images/elli.jpg"></a>
+        <a href="#name"><span class="white-text name">Elliser Non</span></a>
+        <a href="#email"><span class="white-text email">elliserrocellonon@gmail.com</span></a>
+      </div>
+    </li>
+    <li><a href="https://www.facebook.com/elyiseeeeer">
+        <i class="fa-brands fa-square-facebook fa-beat fa-3x" style="color: #2695f0;"></i>
+        Facebook
+      </a>
+    </li>
+    <li><a href="https://www.instagram.com/elyiseeeeer/">
+        <i class="fa-brands fa-square-instagram fa-beat fa-3x" style="color: #dc0c56"></i>
+        Instagram
+      </a>
+    </li>
+    <li><a href="https://www.threads.net/@elyiseeeeer">
+        <i class="fa-brands fa-square-threads fa-beat fa-3x" style="color: #101010"></i>
+        Threads
+      </a>
+    </li>
+    <li><a href="https://twitter.com/hfkwvsskdv">
+        <i class="fa-brands fa-square-x-twitter fa-beat fa-3x" style="color: #0f1419;"></i>
+        Twitter
+      </a>
+    </li>
+    <li><a class="waves-effect" href="#!">
+        <i class="fa-brands fa-square-github fa-beat fa-3x" style="color: #010409;"></i>
+        Github
+      </a>
+    </li>
+    <li><a class="waves-effect" href="#!">
+        <i class="fa-brands fa-discord fa-beat fa-2x" style="color: #5362eb;"></i>
+        Discord
+      </a>
+    </li>
+    <li>
+      <div class="divider"></div>
+    </li>
+  </ul>
+
+  <!-- Embedded Youtube Video -->
+  <div class="card-panel grey" id="video">
+    <div class="video-container card-panel">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vPib9KwCBGs?si=RIfg5cr9p1AB0GdD"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+    </div>
+  </div>
+
+  <!-- Slider Structure -->
+  <div class="card-panel" id="slider">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2021/08/TITANS-SEASON-3.jpg" alt="">
+          <div class="caption center-align">
+            <h3 class="grey-text text-lighten-1"><strong>TITANS</strong></h3>
+            <h5 class="blue-text text-lighten-4">“With great power comes great responsibility”</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://wegotthiscovered.com/wp-content/uploads/2022/11/Raven-Titans-Poster.jpg" alt="">
+          <div class="caption left-align">
+            <h3 class="teal-text">Raven</h3>
+            <h5 class="teal-text text-darken-3">"I guess in the end, <br> there really is no end. <br>Just new
+              beginnings."</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2022/11/titans-gar-ryan-potter.jpg"
+            alt="">
+          <div class="caption right-align">
+            <h3 class="black-text">Beast Boy</h3>
+            <h5 class="blue-grey-text text-darken-3" style="font-weight: 800;">"I may not be smart <br>enough to know
+              <br>everything, <br>but I'm dumb
+              enough<br> to try anything."
+            </h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://www.geekgirlauthority.com/wp-content/uploads/2018/06/Robin-Titans-Crop.jpg" alt="">
+          <div class="caption right-align">
+            <h3>Nightwing/Robin</h3>
+            <h5 class="light grey-text text-lighten-3">“I Don't Even Know If I'll Be Alive <br>Tomorrow, But If I Am,
+              Will
+              You Marry Me?”</h5>
+          </div>
+        </li>
+        <li>
+          <img
+            src="https://static1.srcdn.com/wordpress/wp-content/uploads/2021/07/Jason-Todd-in-Titans-Death-In-The-Family-Adaptation.jpg"
+            alt="">
+          <div class="caption right-align">
+            <h3>Robin 2.0/Red Hood</h3>
+            <h5 class="black-text">"You're no hero, no savior. <br>You failed me, and now you're <br>going to fail
+              Gotham the same way!"</h5>
+          </div>
+        </li>
+        <li>
+          <img src="https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/11/Starfire-Main.jpeg" alt="">
+          <div class="caption left-align">
+            <h3>Starfire</h3>
+            <h5 class="light grey-text text-lighten-3">"I lost my family, my people, <br>my world to war. <br>And all I
+              dream about is <br>searching the galaxy for more."</h5>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Table Structure -->
+  <div class="card-panel grey" id="table">
+    <blockquote>
+      <h5 class="table-header">
+        Titans - DC Comics Superheroes and Their Adversaries
+      </h5>
+    </blockquote>
+    <p>
+      <i><b>Titans</b></i> is an American television series produced for the DC Universe streaming
+      service, later Max, with international distribution via Netflix. The
+      weekly, hour-long series was created by Akiva Goldsman, Geoff Johns, and
+      Greg Berlanti, and began on October 12, 2018.
+    </p>
+    <div class="">
+      <table class="responsive-table striped centered">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Alter Ego</th>
+            <th>Powers/Abilities</th>
+            <th>Origin</th>
+            <th>First Appearance</th>
+            <th>Affiliation Price</th>
+            <th>Arch-Nemesis</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>
+              <div class="images">
+                <img
+                  src="https://comicvine.gamespot.com/a/uploads/square_small/11138/111381541/8988436-nightwing-106-open-to-order-variant-mora-675x1024.jpg"
+                  alt="dickgrayson" class="materialboxed circle responsive-img" data-caption="Nightwing" />
+                <!-- notice the "circle" class -->
+              </div>
+              Nightwing
+            </td>
+            <td>Dick Grayson</td>
+            <td>Acrobatics, Martial Arts, Leadership</td>
+            <td>Formerly Batman's sidekick, trained circus</td>
+            <td>"Tales of the Teen"</td>
+            <td>Titans, Batman</td>
+            <td>Deathstroke</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img
+                  src="https://comicvine.gamespot.com/a/uploads/square_small/11161/111612243/8912348-9748240835-FuFtla2WAAIPrPd.jpg"
+                  alt="koryander" class="materialboxed circle responsive-img" data-caption="Starfire" />
+                <!-- notice the "circle" class -->
+              </div>
+              Starfire
+            </td>
+            <td>Koriand'r</td>
+            <td>Energy Projection, Flight,</td>
+            <td>Alien princess from the planet Tamaran</td>
+            <td>"DC Comics Presents"</td>
+            <td>Titans</td>
+            <td>Blackfire</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img
+                  src="https://comicvine.gamespot.com/a/uploads/square_small/11161/111612243/8912347-2482635404-FuFtmKgWwAYg0kY.jpg"
+                  alt="raven" class="materialboxed circle responsive-img" data-caption="Raven" />
+                <!-- notice the "circle" class -->
+              </div>
+              Raven
+            </td>
+            <td>Rachel Roth</td>
+            <td>Telekinesis, Empathy, Dark Magic</td>
+            <td>Daughter of the demon Trigon,</td>
+            <td>"DC Comics Presents"</td>
+            <td>Titans, Justice</td>
+            <td>Trigon</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img
+                  src="https://comicvine.gamespot.com/a/uploads/square_small/11161/111612243/8912349-1325762190-FuFtnhWWYAUk1ub.jpg"
+                  alt="beastboy" class="materialboxed circle responsive-img" data-caption="Beast Boy" />
+                <!-- notice the "circle" class -->
+              </div>
+              Beast Boy
+            </td>
+            <td>Gar Logan</td>
+            <td>Shape-Shifting, Animal Mimicry</td>
+            <td>Experimented on with a serum derived from</td>
+            <td>"The Doom Patrol" #99</td>
+            <td>Titans</td>
+            <td>Miss Martian</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img src="https://comicvine.gamespot.com/a/uploads/square_small/6/64770/2048726-hank_hall.jpg"
+                  alt="hankhall" class="materialboxed circle responsive-img" data-caption="Hawk" />
+                <!-- notice the "circle" class -->
+              </div>
+              Hawk
+            </td>
+            <td>Hank Hall</td>
+            <td>Super Strength, Durability</td>
+            <td>Former vigilante, member of the Birds of</td>
+            <td>"Showcase" #75 (1968)</td>
+            <td>Titans</td>
+            <td>Dove (Don Hall)</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img src="https://comicvine.gamespot.com/a/uploads/square_small/13/134753/5878639-img_4741.jpg"
+                  alt="dawngranger" class="materialboxed circle responsive-img" data-caption="Dove" />
+                <!-- notice the "circle" class -->
+              </div>
+              Dove
+            </td>
+            <td>Dawn Granger</td>
+            <td>Enhanced Agility, Durability</td>
+            <td>Former vigilante, member of the Birds of</td>
+            <td>"Hawk and Dove" #1</td>
+            <td>Titans</td>
+            <td>Hawk (Hank Hall)</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="images">
+                <img
+                  src="https://comicvine.gamespot.com/a/uploads/square_small/11111/111113340/8912284-6148380269-7F5Rm.jpg"
+                  alt="donnatroy" class="materialboxed circle responsive-img" data-caption="Wonder Girl" />
+              </div>
+              Wonder Girl
+            </td>
+            <td>Donna Troy</td>
+            <td>Superhuman strength, speed, agility</td>
+            <td>Grew up among the Amazons, magic origin</td>
+            <td>"The Brave and</td>
+            <td>Teen Titans</td>
+            <td>Deathstroke</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Footer Structure -->
+  <footer class="blue-grey">
+    <p>&copy; 2023 Elli ng Mundo. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Jquery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <!-- Font Awesome Icons JavaScript -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"> -->
+  <script src="https://kit.fontawesome.com/5d2269c59a.js" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.materialboxed').materialbox({
+        inDuration: 500
+      });
+      $('.slider').slider({
+        indicators: true,
+        interval: 3000,
+        height: 500
+      });
+      $('.sidenav').sidenav({
+      });
+      $('.dropdown-trigger').dropdown({
+        coverTrigger: false,
+      });
+    });
+  </script>
+</body>
+
+</html>

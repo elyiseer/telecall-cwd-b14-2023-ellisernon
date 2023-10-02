@@ -1,0 +1,400 @@
+/* 
+Text Color: Dark Gray (#333333)
+Background Color: White (#ededed)
+Primary Color: Navy Blue (#001f3f)
+Secondary Color: Charcoal Gray (#34495E)
+Accent Color: Deep Green (#006400) 
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather';
+}
+
+body {
+    color: #121212;
+    background-color: #ededed;
+}
+
+nav .menubar {
+    color: #001f3f;
+
+}
+
+nav .xbar {
+    color: #001f3f;
+}
+
+.nav-menu ul li a {
+    font-size: 12px;
+    background-color: rgb(255, 255, 255, 0);
+    color: #333333;
+    border-radius: 50px;
+    margin: auto 5px auto 5px;
+}
+
+.nav-menu ul li a:hover {
+    color: #ededed;
+    background-color: #333333;
+    transition: 0.5s;
+}
+
+.cover {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: -100vw;
+    z-index: 1000;
+}
+
+.brand-logo:hover span {
+    animation: colorCycle 2s linear infinite;
+}
+
+.account-menu ul li a:hover {
+    background-color: #ededed;
+    animation: jump 0.5s ease;
+}
+
+.modal {
+    max-width: 80%;
+    width: auto;
+    margin: 5% auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.modal .nav-menu ul li a {
+    font-size: larger;
+    font-weight: 600;
+    color: #121212;
+}
+
+.alchemy {
+    --bg-size: 400%;
+    --color-one: hsl(210, 100%, 7.8%);
+    --color-two: hsl(210, 25%, 32.2%);
+    --color-three: hsl(120, 100%, 12.5%);
+    background: linear-gradient(90deg,
+            var(--color-one),
+            var(--color-two),
+            var(--color-three),
+            var(--color-one)) 0 0 / var(--bg-size) 100%;
+    color: transparent;
+    -webkit-background-clip: text;
+    /* For WebKit browsers like Chrome and Safari */
+    background-clip: text;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .alchemy {
+        animation: move-bg 15s linear infinite;
+    }
+
+    @keyframes move-bg {
+        to {
+            background-position: var(--bg-size) 0;
+        }
+    }
+}
+
+.resume-btn {
+    background-color: #001f3f;
+    border-radius: 10px;
+}
+
+.resume-btn:hover {
+    background-color: #34495E;
+}
+
+.contact-btn:hover u {
+    color: blue;
+}
+
+section {
+    min-height: 100vh;
+}
+
+.hire-me-top {
+    position: fixed;
+    z-index: 5;
+    top: 8%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    background: url(/images/hire_me.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+    animation: animate-hire-me 30s linear infinite;
+}
+
+.hire-me-top:hover {
+    box-shadow: inset 0 0 20px rgba(237, 237, 237, 1), 0 0 50px #121212;
+    animation: animate-hire-me 30s linear infinite;
+}
+
+.hire-me {
+    bottom: 0%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background: url(/images/hire_me.jpg);
+    background-size: cover;
+    background-repeat: repeat-x;
+    border-radius: 50%;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 1), 0 0 50px #4069ff;
+    animation: animate-hire-me 30s linear infinite;
+}
+
+.hire-me:hover {
+    box-shadow: inset 0 0 20px rgba(237, 237, 237, 1), 0 0 50px #121212;
+    animation: animate-hire-me 30s linear infinite;
+}
+
+.my-picture-container {
+    margin: 20% 7% 7% 7%;
+    border: solid 2px #001f3f;
+    box-shadow: 10px 10px 1px rgba(0, 31, 63, 1);
+    border-radius: 25px;
+}
+
+.my-picture {
+    padding: 5%;
+    border-radius: 25px;
+}
+
+.transforming-text {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 1.5s ease-out;
+    animation-fill-mode: forwards;
+}
+
+.skill-title {
+    width: 30%;
+}
+
+.progress {
+    margin-left: 10px;
+    width: 70%;
+    padding: 0;
+    height: 10px;
+    overflow: hidden;
+    background: #e5e5e5;
+    border-radius: 6px;
+}
+
+.bar {
+    position: relative;
+    float: left;
+    min-width: 1%;
+    height: 100%;
+    background: #001f3f;
+}
+
+.card-section {
+    margin-left: 10%;
+    transition: 0.5s;
+}
+
+.card-section:hover {
+    margin-left: 0;
+}
+
+.card-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    margin: 0 -80px;
+    transition: 0.5s;
+    border-radius: 10px;
+    transform: rotate(calc(var(--r) * 1deg));
+}
+
+.card-section:hover .card-container {
+    transform: rotate(0deg);
+    margin: 0 0;
+}
+
+.card-container::before {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 1px rgba(0, 31, 63, 1);
+}
+
+.card-image {
+    border-radius: 10px;
+}
+
+.fixed-height {
+    height: 400px;
+}
+
+.drawing {
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 992px) {
+    .drawing {
+        display: block;
+    }
+
+    .card-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin: 2% 0;
+        border-radius: 10px;
+        transform: rotate(0deg);
+    }
+
+    .card-section:hover .card-container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 500px;
+        margin: 2% 0;
+        border-radius: 10px;
+        transform: rotate(0deg);
+    }
+
+    .card-section {
+        margin-left: 0;
+    }
+}
+
+@keyframes jump {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
+    }
+
+    40% {
+        transform: translateY(-20px);
+    }
+
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes colorCycle {
+    0% {
+        color: #001f3f;
+    }
+
+    25% {
+        color: #006400;
+    }
+
+    50% {
+        color: #34495E;
+    }
+
+    75% {
+        color: #006400;
+    }
+
+    100% {
+        color: #001f3f;
+        /* Back to the initial color */
+    }
+}
+
+@keyframes animate-hire-me {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 1732px 0;
+    }
+}
+
+@media (max-width: 990px) and (min-width: 768px) {
+    .edited-photo {
+        display: none;
+    }
+
+    .text-slogan {
+        margin-top: 16%;
+    }
+
+    .text-slogan div h3 {
+        font-size: 4em;
+        font-weight: 800;
+    }
+
+    .text-slogan div p {
+        margin: 0 15% 0 15%;
+
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+        /* Move the element 30px down */
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+        /* Move the element back to its original position */
+    }
+}
+
+.transition.slide .cover1 {
+    background-color: #001f3f;
+    animation: slide 2s ease-in-out forwards;
+}
+
+.transition.slide .cover2 {
+    background-color: #333333;
+    animation: slide 2s ease-in-out forwards;
+    animation-delay: 0.23s;
+}
+
+.transition.slide .cover3 {
+    background-color: #34495E;
+    animation: slide 2s ease-in-out forwards;
+    animation-delay: 0.35s;
+}
+
+@keyframes slide {
+    0% {
+        left: 100vw;
+    }
+
+    50%,
+    100% {
+        left: -100vw;
+    }
+}

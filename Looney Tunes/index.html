@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Acme&family=Amatic+SC&family=Bad+Script&family=Baloo+2&family=Bubblegum+Sans&family=Bangers&family=Chewy&family=Crimson+Pro&family=Dosis&family=Freckle+Face&family=Homemade+Apple&family=Lobster&family=Luckiest+Guy&family=Monoton&family=Nova+Round&family=Orbitron&family=Parisienne&family=Patrick+Hand&family=Poppins&family=Rock+Salt&family=Rye&family=Yellowtail&family=Fredoka&display=swap"
+        rel="stylesheet">
+
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Looney Tunes</title>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar-fixed">
+        <nav>
+            <div class="flex-container">
+                <div class="container">
+                    <a href="" class="brand-logo">Looney Tunes</a>
+                    <div class="nav-menu right">
+                        <ul>
+                            <li><a href="index.html" class="btn">Home</a></li>
+                            <li><a href="trivia-and-fun-facts.html" class="btn">Triva</a>
+                            </li>
+                            <li><a href="#" class="btn">Wala pa Laman</a></li>
+                        </ul>
+                    </div>
+                    <a href="#" class="right hide-on-large-only hamburger"><i class="material-icons">menu</i></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Scrollspy -->
+    <div class="col s12 hide-on-med-and-down blob-content">
+        <ul class="section scrollspy-content">
+            <li><a href="#home" class="scrollspy-rounded-corner">Home</a></li>
+            <li><a href="#characters" class="scrollspy-rounded-corner">Characters</a></li>
+            <li><a href="#shows" class="scrollspy-rounded-corner">Shows</a></li>
+        </ul>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" class="section scrollspy"></div>
+    <div class="container">
+        <div class=" hide-on-med-and-down">
+            <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+                <g transform="translate(442.35841479528574 297.140755635228)">
+                    <path fill="#FDEAD8">
+                        <animate attributeName="d" dur="10000ms" repeatCount="indefinite" values="M109.6 -173.5C146.6 -168.5 184.1 -148.3 244.7 -116.8C305.3 -85.3 388.9 -42.7 394.8 3.4C400.7 49.5 329 99 265.7 125.8C202.5 152.7 147.7 156.9 104.9 151.8C62 146.8 31 132.5 -13 155C-57 177.5 -114 236.8 -153.5 240C-193.1 243.1 -215.2 190.1 -244.5 140.7C-273.9 91.3 -310.4 45.7 -318.2 -4.5C-326 -54.7 -305 -109.3 -282 -169.5C-258.9 -229.7 -233.7 -295.4 -186.3 -294.4C-139 -293.4 -69.5 -225.7 -16.6 -197C36.3 -168.3 72.7 -178.5 109.6 -173.5;
+                        
+                        M203.4 -318.3C262.2 -318.4 307.3 -261 341.3 -198.3C375.3 -135.7 398.2 -67.8 374.2 -13.8C350.2 40.2 279.5 80.3 219.2 97.5C159 114.7 109.2 108.9 74.5 161.6C39.7 214.4 19.8 325.7 -5.1 334.5C-30 343.3 -60 249.6 -96.4 197.8C-132.7 145.9 -175.5 136 -180.2 110C-184.9 84 -151.5 42 -154.7 -1.8C-157.9 -45.7 -197.6 -91.3 -217.3 -159.5C-236.9 -227.7 -236.6 -318.5 -197 -329.5C-157.5 -340.5 -78.8 -271.7 -3.2 -266.2C72.3 -260.6 144.7 -318.2 203.4 -318.3;
+
+                        M107.3 -162.6C165.9 -152 258.7 -177.5 274.9 -156.4C291.1 -135.3 230.5 -67.7 192.9 -21.8C155.2 24.2 140.4 48.3 146.7 108.4C153 168.4 180.5 264.3 159.6 280.6C138.7 296.8 69.3 233.4 4.1 226.3C-61.2 219.3 -122.3 268.6 -190.5 279.6C-258.7 290.6 -334 263.4 -359.5 210.5C-385.1 157.5 -361.1 78.8 -360 0.6C-358.9 -77.5 -380.8 -155 -334.5 -172.1C-288.2 -189.1 -173.6 -145.7 -106.5 -151.5C-39.4 -157.2 -19.7 -212.1 2.3 -216.1C24.3 -220.1 48.7 -173.3 107.3 -162.6;
+
+                        M91.2 -163.6C143 -128 227 -153.8 295.9 -136.7C364.8 -119.7 418.6 -59.8 420.7 1.2C422.7 62.2 372.9 124.3 332.4 190.7C292 257.1 261 327.7 207.2 347.5C153.3 367.2 76.7 336.1 22.7 296.9C-31.3 257.6 -62.7 210.2 -122 193.6C-181.3 177 -268.6 191.3 -304.6 164.1C-340.6 137 -325.3 68.5 -326.3 -0.6C-327.3 -69.7 -344.7 -139.3 -313.9 -175.6C-283.2 -211.8 -204.3 -214.6 -144 -245.2C-83.7 -275.9 -41.8 -334.5 -11.1 -315.3C19.7 -296.1 39.4 -199.2 91.2 -163.6;
+
+                        M166.5 -265.7C233.3 -249.8 317.1 -240.6 347.6 -197.5C378 -154.3 355 -77.2 343 -6.9C331 63.3 330.1 126.7 296.6 164.6C263.2 202.6 197.4 215.2 142.5 255.7C87.7 296.2 43.8 364.6 12.1 343.7C-19.7 322.8 -39.4 212.5 -107.6 179.7C-175.8 147 -292.5 191.6 -355.6 174.6C-418.8 157.5 -428.4 78.8 -388.3 23.1C-348.3 -32.5 -258.6 -65 -207.6 -103.1C-156.6 -141.2 -144.3 -184.9 -116.1 -223.2C-88 -261.4 -44 -294.2 2.9 -299.3C49.8 -304.3 99.7 -281.6 166.5 -265.7;
+
+                        M109.6 -173.5C146.6 -168.5 184.1 -148.3 244.7 -116.8C305.3 -85.3 388.9 -42.7 394.8 3.4C400.7 49.5 329 99 265.7 125.8C202.5 152.7 147.7 156.9 104.9 151.8C62 146.8 31 132.5 -13 155C-57 177.5 -114 236.8 -153.5 240C-193.1 243.1 -215.2 190.1 -244.5 140.7C-273.9 91.3 -310.4 45.7 -318.2 -4.5C-326 -54.7 -305 -109.3 -282 -169.5C-258.9 -229.7 -233.7 -295.4 -186.3 -294.4C-139 -293.4 -69.5 -225.7 -16.6 -197C36.3 -168.3 72.7 -178.5 109.6 -173.5
+                        ">
+                        </animate>
+                    </path>
+                </g>
+            </svg>
+        </div>
+        <div id="carousel" class="carousel blob-content">
+            <a id="introduction" class="carousel-item" href="#one!"><img src="images/Bugs_Bunny.svg.png"></a>
+            <a class="carousel-item" href="#"><img src="images/Daffy_Sheldon_Duck.png"></a>
+            <a class="carousel-item" href="#"><img src="images/Marvin_the_Martian.png"></a>
+            <a class="carousel-item" href="#"><img src="images/Fudd.png"></a>
+            <a class="carousel-item" href="#"><img src="images/Gossamer.png"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <!-- Text and Blockquote -->
+        <div class="col s12">
+            <blockquote>
+                <h2 style="font-family: 'Bangers';">Looney Tunes Gang</h2>
+                <p class="flow-text">Goofy! Silly! Wacky! Looney! Follow the hilarious
+                    antics of Warner Bros.' classic animated characters
+                    Bugs Bunny, Daffy Duck and the rest of the Looney Tunes gang.</p>
+            </blockquote>
+        </div>
+
+        <!-- Characters Section -->
+        <div id="characters" class="section scrollspy col s12" style="background-color: #0F1115">
+            <div class="container">
+                <h3 style="font-family: 'Bangers'; color: #FDEAD8">Characters</h3>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Chewy'">Bugs Bunny</h5>
+                    <br>
+                    <div class="container">
+                        <img src="images/Bugs_Bunny.svg.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Freckle Face'">Daffy Duck</h5>
+                    <br>
+                    <div class="container">
+                        <img src="images/Daffy_Sheldon_Duck.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Baloo 2'">Tweety Bird</h5>
+                    <div class="container">
+                        <img src="images/Tweety_Bird.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Lobster'">Porky Pig</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Porky_Pigs.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Bad Script'">Sylvester Cat</h5>
+                    <div class="container">
+                        <img src="images/Sylvester_the_Cat.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Dosis'">Elmer Fudd</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Fudd.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Poppins'">Road Runner</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Road_Runner.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Luckiest Guy'">Yosemite Sam</h5>
+                    <div class="container">
+                        <img src="images/Yosemite_Sam.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Patrick Hand'">Foghorn Leghorn</h5>
+                    <br>
+                    <div class="container">
+                        <img src="images/Foghorn_Leghorn.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Acme'">Wile E. Coyote</h5>
+                    <br>
+                    <div class="container">
+                        <img src="images/Coyote.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Orbitron'">Marvin Martian</h5>
+                    <div class="container">
+                        <img src="images/Marvin_the_Martian.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Parisienne'">Pepe Le Pew</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Pepe_Le_Pew.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Crimson Text'">Granny</h5>
+                    <div class="container">
+                        <img src="images/Granny.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Amatic SC'">Speedy Gonzales</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Speedy_Gonzales.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h6 class="center" style="font-family: 'Rock Salt'">Tasmanian Devil</h6>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Tasmanian_Devil.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Rye'">Barnyard Dawg</h5>
+                    <div class="container">
+                        <img src="images/Barnyard_Dog.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Bubblegum Sans'">Hippety Hopper</h5>
+                    <br>
+                    <div class="container">
+                        <img src="images/Hoppity.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h6 class="center" style="font-family: 'Monoton'">Gossamer</h6>
+                    <br>
+                    <div class="container">
+                        <img src="images/Gossamer.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Yellowtail'">Henery Hawk</h5>
+                    <div class="container">
+                        <img src="images/Henery_Hawk.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Nova Round'">Marc Antony</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/MarcAntony_Pussyfoot.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card" style="border: solid 10px #FDEAD8;">
+                    <h5 class="center" style="font-family: 'Homemade Apple'">Cecil Turtle</h5>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/Cecil_the_Turtle.png" class="responsive-img materialboxed">
+                    </div>
+                </div>
+            </div>
+            <div class="col s6 m4 l3 xl2">
+                <div class="card-panel fixed-height-card">
+                    <a href="https://looneytunes.fandom.com/wiki/Category:Looney_Tunes_Characters">
+                        <h6 class="center" style="font-family: 'Orbitron'">More Characters</h6>
+                    </a>
+                    <br><br>
+                    <div class="container">
+                        <img src="images/arrow_toons.png" class="responsive-img">
+                    </div>
+                    <div class="center-align">
+                        <a href="https://looneytunes.fandom.com/wiki/Category:Looney_Tunes_Characters"
+                            class="btn-floating pulse"><i class="material-icons">arrow_forward</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Shows -->
+        <div id="shows" class="section scrollspy col s12 l6">
+            <div class="shows">
+                <h3 style="font-family: 'Bangers'; color: #0F1115">Movies</h3>
+                <div id="carousel-movies" class="carousel">
+                    <a id="introduction" class="carousel-item" href="https://www.warnerbros.com/movies/space-jam"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/space_jam_key_art.jpeg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/looney-tunes-back-action"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/movies/media/browser/looney_tunes_back_in_action_2000x3000.png">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/bah-humduck-looney-christmas"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/bah_humduck_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/bugs-bunny-road-runner-movie"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/the_bugs_bunny_road_runner_movie_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/bugs-bunnys-1001-rabbit-tales"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/bugs_bunnys_1001_rabbit_tales_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/movies/daffy-ducks-movie-fantastic-island"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/daffy_ducks_movie_fantastic_island_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/daffy-ducks-quackbusters"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/daffy_duck_quackbusters_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/looney-tunes-rabbits-run"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/looney_tunes_rabbits_run_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/movies/looney-looney-looney-bugs-bunny-movie"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/the_looney_looney_looney_bugs_bunny_movie_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/movies/tiny-toon-adventures-how-i-spent-my-vacation"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/tiny_toons_adventures_how_i_spent_my_vacation_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/tweetys-high-flying-adventure"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/movies/media/browser/tweetys_high_flying_adventure_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/movies/looney-tunes-thanksgiving"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/movies/media/browser/a_looney_tunes_thanksgiving_2000x3000.png">
+                    </a>
+                </div>
+                <p>Looney Tunes movies have been a beloved part of animation history for decades, enchanting audiences
+                    with their timeless humor and iconic characters. From the classic 'Bugs Bunny: Superstar' to the
+                    modern 'Space Jam' series, these films have brought the zany world of Bugs Bunny, Daffy Duck, Tweety
+                    Bird, and the rest of the Looney Tunes gang to life on the big screen. With their witty one-liners,
+                    slapstick comedy, and memorable adventures, these movies have not only entertained generations but
+                    also showcased the enduring appeal of these animated legends. Whether it's Bugs outsmarting Elmer
+                    Fudd or the Looney Tunes teaming up with NBA superstars, these films continue to capture the hearts
+                    of both young and old, proving that the Looney Tunes magic never fades.</p>
+            </div>
+        </div>
+        <div class="col s12 l6">
+            <div class="shows">
+                <h3 style="font-family: 'Bangers'; color: #0F1115">TV Shows</h3>
+                <div id="carousel-shows" class="carousel">
+                    <a id="introduction" class="carousel-item"
+                        href="https://www.warnerbros.com/tv/warner-cartoons-classics-bugs-bunny-volume-4"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/warner_cartoons_classics_bugs_bunny_v4_2000x3000.png">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/tv/warner-cartoons-classics-all-stars-volume-1"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/warner_cartoons_classics_all_stars_v1_2000x3000.png">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/tv/warner-cartoons-classics-speedy-gonzales-volume-1"><img
+                            src="https://irs.www.warnerbros.com/keyart-jpeg/tv/media/browser/warner_cartoons_classics_speedy_gonzales_2000x3000.jpg">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/tv/warner-cartoons-classics-daffy-duck-volume-1"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/warner_cartoons_classics_daffy_duck_v1_2000x3000.png">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/tv/steven-spielberg-presents-tiny-toon-adventures-season-1-volume-1"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/steven_spielberg_tiny_toon_adventures_s1_v1_2000x3000.png">
+                    </a>
+                    <a class="carousel-item"
+                        href="https://www.warnerbros.com/tv/steven-spielberg-presents-tiny-toon-adventures-season-1-volume-2"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/steven_spielberg_tiny_toon_adventures_s1_v2_2000x3000.png">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/tv/looney-tunes-show-season-1"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/the_looney_tunes_show_s1_2000x3000.png">
+                    </a>
+                    <a class="carousel-item" href="https://www.warnerbros.com/tv/looney-tunes-show-season-2"><img
+                            src="https://irs.www.warnerbros.com/keyart-png/tv/media/browser/the_looney_tunes_show_s2_2000x3000.png">
+                    </a>
+                </div>
+                <p>Looney Tunes TV shows have been a staple of animated entertainment for television audiences
+                    worldwide. Spanning from the classic 'Looney Tunes' and 'Merrie Melodies' shorts that originally
+                    premiered in the 1930s to more contemporary series like 'The Looney Tunes Show' and 'New Looney
+                    Tunes,' these shows have consistently delivered laughter and delight to viewers of all ages. Through
+                    the misadventures of iconic characters such as Bugs Bunny, Daffy Duck, and Porky Pig, these TV shows
+                    have offered a mix of clever wit, slapstick comedy, and memorable catchphrases that have become a
+                    part of popular culture. They've continued to evolve over the years while staying true to the
+                    timeless charm of the Looney Tunes universe, making them a cherished and enduring presence in the
+                    world of animated television.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large red">
+            <i class="large material-icons">notifications_active</i>
+        </a>
+        <ul>
+            <li>
+                <a class="btn-floating" id="bugs-fab-button">
+                    <img src="https://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Bugs-Bunny-Carrot-icon.png"
+                        width="30" height="30">
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating" id="daffy-fab-button">
+                    <img src="https://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Daffy-Duck-Angry-icon.png"
+                        width="30" height="30">
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating" id="coyote-fab-button">
+                    <img src="https://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Wile-E-Coyote-icon.png"
+                        width="30" height="30">
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating" id="taz-fab-button">
+                    <img src="https://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Taz-icon.png" width="30"
+                        height="30">
+                </a>
+            </li>
+            <li>
+                <a class="btn-floating" id="marvin-fab-button">
+                    <img src="https://icons.iconarchive.com/icons/sykonist/looney-tunes/128/Marvin-Martian-Angry-icon.png"
+                        width="30" height="30">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <footer>&copy 2023 Elli ng Mundo. All Rights Reserved.</footer>
+
+    <!-- Jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#carousel').carousel({
+                duration: 300,
+                dist: -75,
+                shift: 100,
+                indicators: true
+            });
+            $('#carousel-movies').carousel({
+                duration: 300,
+                fullWidth: true,
+                numVisible: 10,
+                padding: 20
+            });
+            $('#carousel-shows').carousel({
+                duration: 300,
+                fullWidth: true,
+                numVisible: 10,
+                padding: 20
+            });
+            $('.scrollspy').scrollSpy({
+                scrollOffset: 50,
+            });
+            $('.fixed-action-btn').floatingActionButton({
+                hoverEnabled: false
+            });
+            $('.materialboxed').materialbox();
+        });
+
+        const fabButton_bugs = document.getElementById('bugs-fab-button');
+        const soundURL_bugs = 'sounds/Bugs_Bunny_Sounds.mp3';
+        const audio_bugs = new Audio(soundURL_bugs);
+
+        // Add a click event listener to the FAB
+        fabButton_bugs.addEventListener('click', () => {
+            audio_bugs.play();
+        });
+        const fabButton_daffy = document.getElementById('daffy-fab-button');
+        const soundURL_daffy = 'sounds/Daffy_Duck_Sounds.mp3';
+        const audio_daffy = new Audio(soundURL_daffy);
+
+        // Add a click event listener to the FAB
+        fabButton_daffy.addEventListener('click', () => {
+            audio_daffy.play();
+        });
+        const fabButton_coyote = document.getElementById('coyote-fab-button');
+        const soundURL_coyote = 'sounds/Coyote_Sounds.mp3';
+        const audio_coyote = new Audio(soundURL_coyote);
+
+        // Add a click event listener to the FAB
+        fabButton_coyote.addEventListener('click', () => {
+            audio_coyote.play();
+        });
+        const fabButton_taz = document.getElementById('taz-fab-button');
+        const soundURL_taz = 'sounds/Taz_Sounds.mp3';
+        const audio_taz = new Audio(soundURL_taz);
+
+        // Add a click event listener to the FAB
+        fabButton_taz.addEventListener('click', () => {
+            audio_taz.play();
+        });
+        const fabButton_marvin = document.getElementById('marvin-fab-button');
+        const soundURL_marvin = 'sounds/Marvin_Martian_Sounds.mp3';
+        const audio_marvin = new Audio(soundURL_marvin);
+
+        // Add a click event listener to the FAB
+        fabButton_marvin.addEventListener('click', () => {
+            audio_marvin.play();
+        });
+
+
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function () {
+            navBar = document.querySelector(".nav-menu");
+            navBar.classList.toggle("active");
+        }
+    </script>
+
+</body>
+
+</html>
